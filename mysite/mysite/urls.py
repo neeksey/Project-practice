@@ -56,6 +56,12 @@ router.register(r'teachers', TeacherViewSet)
 router.register(r'subjects', SubjectViewSet)
 router.register(r'grades', GradeViewSet)
 
+'''
+Этот фрагмент кода связан с использованием библиотеки DRF-YASG
+(Django REST framework Yet Another Swagger Generator), которая
+позволяет автоматически генерировать документацию API на основе
+спецификации OpenAPI/Swagger для Django REST Framework (DRF).
+'''
 schema_view = get_schema_view(
     openapi.Info(
         title="Your Project Title",
